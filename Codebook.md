@@ -24,7 +24,7 @@ The assignment was to get signal data from UCI using this url https://archive.ic
 ## Identifiers
 These are the identfiers that I used to link the raw data, activity data and the subject data. This complies to Tidy Data #3 and #4 criteria.
 
-sample_id - identifies the sample measurement and numbers each row in the test data and the train data 
+sample_id - identifies the sample measurement and numbers each row in the test data and the train data.  It is used to maintain integrity when linking X, Y and subject files, that is, the sample(row) in X is linked to the same sample in Y and subject files.
 
 activityid - identifies the activity and can link it to an english description
 
@@ -33,10 +33,11 @@ subjectid - identifies the subjects in the test and train and is used to link th
 ## Variables
 There were 561 variables in the raw data set.  These broke the tidy data rule #1.  The data was melted into 5 variables: sample_id, activityid, subjectid, varialbe and value. The variable column was then split 4 columns as follows: Tidy data requires one variable per column. This complies to Tidy Data #1 criteria.
 
-domain - is the domain for the signals and can be time (t) or frequence (f)
+####domain
+Is the domain for the signals and can be time (t) or frequence (f)
 
-
-measurement - is the type of device measurement that was taken during the experiment
+####measurement 
+Is the type of device measurement that was taken during the experiment.  THese measurements are from the accelerometer and gyroscope.  These time domain signals were captured at a constate rate of 50Hz.  The following are the signals that wee used to capture readings:
   
   "bodyacc"
   
@@ -65,45 +66,48 @@ measurement - is the type of device measurement that was taken during the experi
   "bodybodygyrojerkmag"
   
   
-stat - is the statiscal calculation that was performed on the measurement
+####stat
+Is the statiscal calculation that was performed on the measurement
  
-  "mean"
+  "mean" - mean value
   
-  "std"
+  "std" - standard deviation 
   
-  "mad"
+  "mad" - median absolute deviation
   
-  "max"
+  "max" - largest value in the array
   
-  "min"
+  "min" - smallest value in the array
   
-  "sma"
+  "sma" - signal magnitude area
   
-  "energy"
+  "energy" - energy measure
   
-  "iqr"
+  "iqr" - interquartile range
   
-  "entropy" 
+  "entropy" - signal entropy
   
-  "arcoeff"
+  "arcoeff" - autoregression coefficients with Burg order equal to 4
   
-  "correlation" 
+  "correlation" - correlation coefficient between two signals 
   
-  "meanfreq"
+  "meanfreq" - weighted average of the frequency components to obtain a mean frequency
   
-  "skewness"
+  "skewness" - skewness of the frequency domain signal
   
-  "kurtosis"
+  "kurtosis" - kurtosis of the frequency domain signal
   
-  "bandsenergy"
+  "bandsenergy" - energy of a frequency interval within the 64 bins of the FFT of each window
   
-  "angle"
+  "angle" - angle between two vectors
   
 
-axis - is the axial direction of the measurement and can be x, y, z or overall.
+####axis
+Is the axial direction of the measurement and can be x, y, z or overall.
 
 
-value - is the actually reading for that subject, activity, domain, measurement, stat and axis.
+####value
+Is the actually reading for that subject, activity, domain, measurement, stat and axis.
 
 ## Activity Levels
 The codes for activity levels are as follows:
