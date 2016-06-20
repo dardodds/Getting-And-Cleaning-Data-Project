@@ -14,6 +14,7 @@ tidy_train <- function(x1,y1,s1,f,a) {
   features_raw <- f 
   activities <- a 
   
+  
   ## TIDY DATA ##
   ## 1. Each variable is one column
   ## 2. Each observation is a different row
