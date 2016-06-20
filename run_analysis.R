@@ -1,6 +1,7 @@
 run_analysis <- function() {
   
   ## Setup
+  
   setwd("~/Projects/tidydata")
   library(reshape2)
   library(stringr)
