@@ -51,7 +51,7 @@ Train Data Files
 
 ## Code Book Link
 
-Please find the code book for this project at 
+Please find the code book for this project at https://github.com/dardodds/Getting-And-Cleaning-Data-Project/blob/master/Codebook.md
 
 
 ## Scripts
