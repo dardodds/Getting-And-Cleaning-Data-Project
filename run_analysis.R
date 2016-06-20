@@ -40,7 +40,6 @@ run_analysis <- function() {
     
     stat_var <- c("mean","std")
     mean_std_sub_data <- subset(all_df, stat %in% stat_var)
-      
     
   ## ASSIGNMENT STEP 3   
   ## 3. Use descriptive activity names to name the 
@@ -49,7 +48,7 @@ run_analysis <- function() {
     activty_lvs <- activities[,2]
     mean_std_sub_data$activity<- NULL
     mean_std_sub_data$activity<- factor(activty_lvs[mean_std_sub_data$activityid], levels = activty_lvs)
-    write.table(mean_std_sub_data, file = "./data/tidy.txt")
+    write.table(mean_std_sub_data, file = "./data/tidy.txt",row.names = FALSE)
   
   ## ASSIGNMENT STEP 4   
   ## 4. Appropriately labels the data set with descriptive variable names 
@@ -71,6 +70,6 @@ run_analysis <- function() {
     sub2 <- subset(mean_std_sub_data[,c(3,4,6,9)])
     grp1 <- group_by(sub2, subjectid, activity, measurement)
     tidy2 <- summarize(grp1, mean = mean(value) )
-    write.table(tidy2, file = "./data/tidy2.txt")
+    write.table(tidy2, file = "./data/tidy2.txt",row.names = FALSE)
     return(tidy2)
 }
