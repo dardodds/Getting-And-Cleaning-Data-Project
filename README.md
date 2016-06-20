@@ -1,5 +1,5 @@
 # Getting-And-Cleaning-Data-Project
-# Getting-And-Cleaning-Data-Course-Project
+
 ---
 title: "README"
 author: "Darlene Dodds"
@@ -7,9 +7,6 @@ date: "June 19, 2016"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## Getting and Cleaning Data Course Project
 
@@ -21,7 +18,7 @@ The purpose of this project is to demonstrate an ability to collect, work with a
 
 3. a code book that describes the variables, the data and any transformations. 
 
-4. README.md explaining scripts and how the scripts work.
+4. README.md explaining data and scripts and how the scripts work.
 
 ## Input Data
 
@@ -29,7 +26,7 @@ All the input data is from the UCI and can be downloaded using this url https://
 
 The files are in a UCI HAR Dataset.zip file and are as follows
 
-Test Data
+Test Data Files
 
 1.  activity_labels.txt
 2.  features_info.txt
@@ -40,7 +37,7 @@ Test Data
 7.  y_test.txt
 8.  Inertial Signals
 
-Train Data
+Train Data Files
 
 1.  activity_labels.txt
 2.  features_info.txt
@@ -52,11 +49,15 @@ Train Data
 8.  Inertial Signals
 
 
-## Output Data
+## Output Data Files
 
 1.  tidy.txt - merged training and test data set meets tidy data requirements
 
 2.  tidy2.txt - second tidy data with with the average of each variable for each activity and each subject
+
+## Code Book Link
+
+Please find the code book for this project at 
 
 
 ## Scripts
