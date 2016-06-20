@@ -33,11 +33,27 @@ subjectid - identifies the subjects in the test and train and is used to link th
 ## Variables
 There were 561 variables in the raw data set.  These broke the tidy data rule #1.  The data was melted into 5 variables: sample_id, activityid, subjectid, varialbe and value. The variable column was then split 4 columns as follows: Tidy data requires one variable per column. This complies to Tidy Data #1 criteria.
 
+####Example of Variable Transformation
+
+original variable = "tBodyAcc-mean()-X"
+
+split into domain, measurement, stat and axis
+
+domain = "t""
+
+measurement = "bodyacc""
+
+stat = "mean""
+
+axis = "X""
+
 ####domain
 Is the domain for the signals and can be time (t) or frequence (f)
 
 ####measurement 
-Is the type of device measurement that was taken during the experiment.  THese measurements are from the accelerometer and gyroscope.  These time domain signals were captured at a constate rate of 50Hz.  The following are the signals that wee used to capture readings:
+Is the type of device measurement that was taken during the experiment.  THese measurements are from the accelerometer and gyroscope.  These time domain signals were captured at a constate rate of 50Hz.  
+
+The following are the signals that wee used to capture readings:
   
   "bodyacc"
   
@@ -154,7 +170,7 @@ This script takes the raw test data and performs the following
 
 This script does exactly the same tidying for the train data.
 
-## Libraries
+## Libraries Used
 
   library(reshape2)
   
