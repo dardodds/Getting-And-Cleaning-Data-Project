@@ -20,27 +20,28 @@ All the input data is from the UCI and can be downloaded using this url https://
 
 The files are in a UCI HAR Dataset.zip file and are as follows
 
-Test Data Files
+####Description Files
+./UCI HAR Dataset/activity_labels.txt
 
-1.  activity_labels.txt
-2.  features_info.txt
-3.  features.txt
-4.  README.txt
-5.  test/subject_test.txt
-6.  x_test.txt
-7.  y_test.txt
-8.  Inertial Signals
+./UCI HAR Dataset/features_info.txt
 
-Train Data Files
+./UCI HAR Dataset/README.txt
 
-1.  activity_labels.txt
-2.  features_info.txt
-3.  features.txt
-4.  README.txt
-5.  train/subject_test.txt
-6.  x_train.txt
-7.  y_train.txt
-8.  Inertial Signals
+####Test Data Files
+
+./UCI HAR Dataset/test/subject_test.txt
+
+./UCI HAR Dataset/test/x_test.txt
+
+./UCI HAR Dataset/test/y_test.txt
+
+####Training Data Files
+
+./UCI HAR Dataset/train/subject_train.txt
+
+./UCI HAR Dataset/train/x_train.txt
+
+./UCI HAR Dataset/train/y_train.txt
 
 
 ## Output Data Files
@@ -86,6 +87,30 @@ This script does exactly the same tidying for the train data.
 
 ####D. Running Scripts
 
-In RStudio, change the working directory with the setwd(dir="path") where all your data is.  Once this has been saved, just call the function run_analysis() and it will call tidy_test() and tidy_train() and then writeout all the tidy data sets to the working directory.
+In RStudio, change the working directory with the setwd(dir="path").
+
+The input data must be in a folder called "UCI HAR Dataset" and contained in the workding directory. It must maintain it's original file structure. 
+
+./UCI HAR Dataset/activity_labels.txt
+
+./UCI HAR Dataset/features_info.txt
+
+./UCI HAR Dataset/README.txt
+
+./UCI HAR Dataset/test/subject_test.txt
+
+./UCI HAR Dataset/test/x_test.txt
+
+./UCI HAR Dataset/test/y_test.txt
+
+./UCI HAR Dataset/train/subject_train.txt
+
+./UCI HAR Dataset/train/x_train.txt
+
+./UCI HAR Dataset/train/y_train.txt
+
+The output files are written to the working directory.
+
+Call the function run_analysis() and it will call tidy_test() and tidy_train() and then write out all the tidy data sets to the working directory.
 
 
