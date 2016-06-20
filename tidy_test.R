@@ -7,7 +7,8 @@ tidy_test <- function(x,y,s,f,a) {
   ##s <- read.table("./UCI HAR Dataset/test/subject_test.txt", header = FALSE, strip.white = TRUE)
   ##f <- read.delim("./UCI HAR Dataset/features.txt", header = FALSE, sep = " ")
   ##a <- read.delim("./UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")
-  x_test_raw <- x
+ 
+   x_test_raw <- x
   y_test_raw <- y 
   subject_test_raw <- s 
   features_raw <- f 
